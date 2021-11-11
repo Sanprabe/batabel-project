@@ -421,10 +421,10 @@ main{
     position: relative;
     scroll-snap-align: center;
     width: 65%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 10px 0;
+    margin: 50px 7px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -470,8 +470,11 @@ main{
 }
 
 .plan-card--price span{
+    display: inline-block;
+    vertical-align: text-top;
+    margin-top: 15px;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .plan-card--saving{
@@ -515,4 +518,46 @@ main{
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-general--container{
+    width: 100%;
+    min-width: 320px;
+    max-width: 670px;
+    height: 100%;
+    display: flex;
+}
+
+footer section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links--container li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-links--container a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+.footer-img--container img{
+    height: 50px;
+    width: 64px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
