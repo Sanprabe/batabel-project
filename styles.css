@@ -376,7 +376,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-image: url('./assets/img/bitcoinbaby.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -442,7 +442,8 @@ main{
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16)
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    margin-bottom: 10px;
 }
 
 .plans-container--card .recommended{
@@ -567,4 +568,3 @@ footer section{
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
-
