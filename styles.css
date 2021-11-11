@@ -111,11 +111,11 @@ main{
 
 .main-exchange-container{
     width: 100%;
-    height: auto;
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
 }
+
 
 .main-exchange-container .backgroundImg{
     width: 200px;
@@ -151,12 +151,21 @@ main{
     color: #757575;
 }
 
+.exchange-container--slider{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 60px;
+}
+
 .main-currency-table {
     height: 360px;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0;
+    scroll-snap-align: center;
 }
 
 .main-currency-table .currency-table--title{
@@ -254,10 +263,6 @@ main{
     line-height: 1.5rem;
     color: var(--warm-black);
     font-weight: 300px;
-}
-
-.main-dealers-table{
-    margin-top: 30px;
 }
 
 .main-dealers-table .dealers-table--title{
@@ -386,6 +391,8 @@ main{
     color: var(--just-white);
 }
 
+/* PLANS */
+
 .main-plans-container{
     width: 100%;
     min-width: 320px;
@@ -415,6 +422,13 @@ main{
     font-weight: 500;
     line-height: 1.8rem;
     color: #757575;
+}
+
+.plans-container--slider{
+    display: flex; /**/
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .plans-container--card{
@@ -448,7 +462,7 @@ main{
     position: absolute;
     top: -15px;
     left: calc(50% - 50px);
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -512,13 +526,6 @@ main{
     padding-top: 40px;
 }
 
-.plans-container--slider{
-    display: flex;
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-}
 
 footer{
     width: 100%;
@@ -560,3 +567,4 @@ footer section{
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
+
